@@ -98,8 +98,8 @@ namespace QuantConnect.Brokerages.Fxcm
             // Hedging MUST be disabled on the account
             if (_accounts[_accountId].getParties().getFXCMPositionMaintenance() == "Y")
             {
-                throw new NotSupportedException("FxcmBrokerage.LoadAccounts(): The Lean engine does not support accounts with Hedging enabled. " +
-                    "Please contact FXCM Active Trader support to disable Hedging. They can be reached at 646.432.2970 or by email, activetrader@fxcm.com."
+                throw new NotSupportedException("FxcmBrokerage.LoadAccounts(): Hello FXCM staff, " +
+                    "Please enable Java API for all accounts which are associated with this email address. Also, please respond to this email address (pcs@fxcm.com) once Java API has been enabled, letting us know that the change was done successfully."
                 );
             }
         }
